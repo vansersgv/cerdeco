@@ -1,0 +1,47 @@
+/*---------- GENERALES ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* reset */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.grid-contenedor {
+    width: 100%;
+    margin: 0 ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto 150px;
+    grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer" 
+    ;
+}
+
+body{
+    font-family: 'Tinos', serif;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    }
+
+h4{
+    color: darkgoldenrod;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}

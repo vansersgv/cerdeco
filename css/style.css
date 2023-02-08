@@ -26,21 +26,17 @@ body{
 
 /*----------header----------*/
 
-.encabezado {
-    grid-area: header;
+header {
+    grid-area: header;    
+        background: rgb(136,133,119);
+        background: linear-gradient(346deg, rgba(136,133,119,0.6054796918767507) 49%, rgba(122,122,135,0.16010154061624648) 84%, rgba(205,209,213,0.48503151260504207) 100%);
+        /*--position: sticky;--*/
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;    
 }
-
-header{
-    background: rgb(136,133,119);
-    background: linear-gradient(346deg, rgba(136,133,119,0.6054796918767507) 49%, rgba(122,122,135,0.16010154061624648) 84%, rgba(205,209,213,0.48503151260504207) 100%);
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
 header img {
     width: 300px;
     height: 80px;
@@ -63,7 +59,7 @@ header nav ul li a{
 
 header nav ul li a:hover{
     color: rgb(181, 236, 236);
-}    
+}  
 
 /*----------main----------*/
 
@@ -100,7 +96,7 @@ header nav ul li a:hover{
     height: 600px;     
 }
 
-.propio div {
+/*.propio div {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,7 +115,7 @@ header nav ul li a:hover{
 
 .propio div img:hover{
     transform: scale(1.1);
-}
+}*/
 
 .propio h2 {
     font-size: 50px;
@@ -179,21 +175,7 @@ box-shadow: -21px 22px 24px -17px rgba(145,119,119,1);
 -moz-box-shadow: -21px 22px 24px -17px rgba(145,119,119,1);
 }
 
-.maceta {
-    grid-column: span 3;
-}
 
-.florer { 
-    grid-area: span 2;
-}
-
-.florero {
-    grid-column: span 2;
-}
-
-.cuencos {
-    grid-column: span 2;
-}
 
 .contacto div {
     color: black;
