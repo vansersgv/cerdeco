@@ -1,1 +1,41 @@
 /*---------- VARIABLES ----------*/
+
+$color-pri: black;
+$color-sec: rgb(202, 194, 194);
+$color-ter: darkgoldenrod;
+$color-cur: red;
+
+/*---------- LISTA ----------*/
+
+$font-size:
+50px,
+45px,
+40px,
+35px,
+30px,
+25px,
+20px,
+15px;
+
+/*---------- MAPAS ----------*/
+
+$boton:(
+f-direccion: column,
+t-decoracion: none,
+l-stilo: none,
+f-weight: bolder,
+);
+/*---------- EXTEND ----------*/
+
+%titulos{
+    font-size: 50px;
+    padding : 20px;
+}
+
+/*---------- MIXINS ----------*/
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

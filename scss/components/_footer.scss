@@ -9,15 +9,16 @@
     .seguinos {
         padding: 20px;
         h2 {
-            font-size: 50px;
+            font-size: nth($font-size, 1 );
             padding: 40px;
         }
         div {
             padding: 30px;
             margin: 20px;
-            display: flex;
+            @include flex (flex, space-evenly, center);
+            /*display: flex;
             justify-content: space-evenly;
-            align-items: center;
+            align-items: center;*/
             a {
                 img {
                     width: 100px;
@@ -28,17 +29,20 @@
     }
 
     .todo {
-        color: black;
-        display: flex;
+        color: $color-pri;
+        @include flex (flex, space-around, center);
+        /*display: flex;
         justify-content:space-around;
-        align-items: center;
+        align-items: center;*/
         div {                        
             ul{
                 li {
                     a {
-                        text-decoration: none;
-                        list-style: none;
-                        color: black;
+                        text-decoration: map-get($boton, t-decoracion);
+                        list-style: map-get($boton, l-stilo);
+                        /*text-decoration: none;
+                        list-style: none;*/
+                        color: $color-pri;
                     }
                 }
             }

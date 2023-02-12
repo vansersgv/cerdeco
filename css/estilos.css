@@ -33,6 +33,14 @@ h4 {
     height: 80px; }
 
 /*---------- VARIABLES ----------*/
+/*---------- LISTA ----------*/
+/*---------- MAPAS ----------*/
+/*---------- EXTEND ----------*/
+.principal .destacados h2, .principal .propio h2, .envios h2, .somos h2, .preguntas h2 {
+  font-size: 50px;
+  padding: 20px; }
+
+/*---------- MIXINS ----------*/
 /*---------- HEADER ----------*/
 header {
   grid-area: header;
@@ -42,6 +50,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
   padding: 10px; }
   header a img {
     width: 300px;
@@ -69,10 +80,13 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
     flex-direction: column;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    /*display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;*/ }
     .principal .hero h1 {
       font-size: 70px;
       padding: 20px; }
@@ -80,8 +94,8 @@ header {
       font-size: 35px;
       text-align: center; }
   .principal .destacados h2 {
-    font-size: 50px;
-    padding: 30px; }
+    /*font-size: 50px;
+            padding: 20px;*/ }
   .principal .destacados .grid-destacados {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -95,18 +109,23 @@ header {
       -webkit-caja-sombra: -21px 22px 24px -17px #917777;
       -moz-box-shadow: -21px 22px 24px -17px #917777; }
   .principal .destacados a {
+    flex-direction: column;
     text-decoration: none;
+    /*flex-direction: column;
+                text-decoration: none;
+                font-weight: bolder;*/
     color: black;
-    font-weight: bolder;
     background-color: #cac2c2;
     padding: 10px;
     margin: 50px;
     text-align: center;
     font-size: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    /*display: flex;
+                justify-content: center;
+                align-items: center;*/ }
   .principal .destacados .maceta {
     grid-column: span 3; }
   .principal .destacados .florer {
@@ -115,23 +134,23 @@ header {
     grid-column: span 2; }
   .principal .destacados .cuencos {
     grid-column: span 2; }
-  .principal .propio h2 {
-    font-size: 50px;
-    padding: 20px; }
   .principal .propio p {
     font-size: 35px;
     text-align: center;
     padding: 20px; }
-  .principal .carrusel .carousel-inner .carousel-item img {
-    width: 100vh;
-    height: 600px; }
-  .principal .carrusel .carousel-inner .carousel-item h5 {
-    text-align: center;
-    font-size: 40px; }
-  .principal .carrusel .carousel-inner .carousel-item p {
-    text-decoration: none;
-    text-align: center;
-    font-size: 30px; }
+  .principal .carrusel .carousel-inner {
+    border-radius: 400px; }
+    .principal .carrusel .carousel-inner .carousel-item img {
+      object-fit: fill;
+      width: 1200px;
+      height: 600px; }
+    .principal .carrusel .carousel-inner .carousel-item div h5 {
+      text-align: center;
+      font-size: 40px; }
+    .principal .carrusel .carousel-inner .carousel-item div p {
+      text-decoration: none;
+      text-align: center;
+      font-size: 30px; }
   .principal .anotate {
     text-align: center;
     font-size: 40px; }
@@ -142,16 +161,20 @@ header {
       color: black;
       width: 100%;
       height: 300px;
-      text-align: center;
-      font-size: 20px;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      /*display: flex;
+            justify-content: center;
+            text-align: center;*/
+      font-size: 20px;
+      flex-direction: column;
       align-items: center; }
       .principal .anotate div a {
         text-decoration: none;
+        /*text-decoration: none;
+                font-weight: bolder;*/
         color: black;
-        font-weight: bolder;
         background-color: #cac2c2;
         padding: 10px;
         margin: 20px; }
@@ -167,17 +190,22 @@ header {
   height: 300px;
   text-align: center;
   font-size: 20px;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center;
+  /*display: flex;
+        justify-content: center;
+        align-items: center;*/
   padding: 20px;
   margin: 20px; }
 
 .contacto div a {
   text-decoration: none;
-  color: black;
   font-weight: bolder;
+  /*text-decoration: none;
+            font-weight: bolder;*/
+  color: black;
   background-color: #cac2c2;
   padding: 20px;
   margin: 20px; }
@@ -186,9 +214,6 @@ header {
 .envios {
   width: 100%;
   height: 800px; }
-  .envios h2 {
-    font-size: 50px;
-    padding: 20px; }
   .envios p {
     font-family: unset;
     color: black;
@@ -200,9 +225,6 @@ header {
 .somos {
   width: 100%;
   height: 500px; }
-  .somos h2 {
-    font-size: 50px;
-    padding: 20px; }
   .somos div p {
     color: black;
     font-size: 30px;
@@ -213,9 +235,6 @@ header {
 .preguntas {
   width: 100%;
   height: 990px; }
-  .preguntas h2 {
-    font-size: 50px;
-    padding: 20px; }
   .preguntas p {
     font-family: unset;
     color: black;
@@ -243,8 +262,8 @@ header {
       height: 350px;
       margin: 30px;
       text-align: center;
-      box-shadow: -21px 22px 24px -17px #917777;
-      -webkit-caja-sombra: -21px 22px 24px -17px #917777;
+      box-shadow: -11px 32px 34px -7px #917777;
+      -webkit-caja-sombra: -21px 32px 34px -17px #917777;
       -moz-box-shadow: -21px 22px 24px -17px #917777; }
     .grid-productos .productos-contenedor img {
       transition: 2s; }
@@ -274,7 +293,10 @@ header {
       margin: 20px;
       display: flex;
       justify-content: space-evenly;
-      align-items: center; }
+      align-items: center;
+      /*display: flex;
+            justify-content: space-evenly;
+            align-items: center;*/ }
       .pie .seguinos div a img {
         width: 100px;
         height: 100px; }
@@ -282,10 +304,15 @@ header {
     color: black;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    /*display: flex;
+        justify-content:space-around;
+        align-items: center;*/ }
     .pie .todo div ul li a {
       text-decoration: none;
       list-style: none;
+      /*text-decoration: none;
+                        list-style: none;*/
       color: black; }
     .pie .todo .contactanos p {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -294,28 +321,35 @@ header {
 /*---------- MEDIAQUERY ----------*/
 @media screen and (max-width: 950px) {
   /*---------- INDEX-GENERALES ----------*/
-  .grid-destacados {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 220px; }
-  .grid-item {
-    grid-column: span 1;
-    grid-row: span 1; }
   header {
     flex-direction: column; }
-  .cuencos {
-    grid-column: span 2; }
   .principal .hero h1 {
     font-size: 50px; }
   .principal .hero p {
     font-size: 25px; }
   .principal .destacados h2 {
     font-size: 30px; }
+  .principal .destacados .grid-destacados {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px; }
+    .principal .destacados .grid-destacados .grid-item {
+      grid-column: span 1;
+      grid-row: span 1; }
+    .principal .destacados .grid-destacados .cuencos {
+      grid-column: span 2; }
   .principal .destacados a {
     font-size: 20px; }
   .principal .propio h2 {
     font-size: 30px; }
   .principal .propio p {
     font-size: 25px; }
+  .principal .carrusel .carousel-inner .carousel-item img {
+    width: 800px;
+    height: 400px; }
+  .principal .carrusel .carousel-inner .carousel-item div h5 {
+    font-size: 30px; }
+  .principal .carrusel .carousel-inner .carousel-item div p {
+    font-size: 20px; }
   .principal .anotate h3 {
     font-size: 30px; }
   /*---------- FOOTER ----------*/
@@ -367,6 +401,9 @@ header {
     font-size: 25px; }
   .principal .propio p {
     font-size: 20px; }
+  .principal .carrusel .carousel-inner .carousel-item img {
+    width: 500px;
+    height: 300px; }
   .principal .anotate h3 {
     font-size: 20px; }
     .principal .anotate h3 div a {
@@ -400,19 +437,22 @@ header {
 
 @media screen and (max-width: 450px) {
   /*---------- INDEX-GENERALES ----------*/
-  header nav ul li {
-    margin: 1px; }
+  header nav ul {
+    flex-direction: column;
+    text-align: center; }
+    header nav ul li {
+      margin: 1px; }
   .principal .hero h1 {
     font-size: 30px; }
   .principal .hero p {
     font-size: 20px; }
   .principal .hero .destacados .grid-destacados {
-    grid-template-columns: 1fr; }
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 220px; }
     .principal .hero .destacados .grid-destacados .grid-item {
       grid-column: span 1;
       grid-row: span 1; }
-  /*---------- ENVIOS ----------*/
-  .envios {
+  .principal .envios {
     height: 950px; } }
 
 @media screen and (max-width: 420px) {
