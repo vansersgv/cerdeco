@@ -4,10 +4,7 @@ header {
     background: rgb(136,133,119);
     background: linear-gradient(346deg, rgba(136,133,119,0.6054796918767507) 49%, rgba(122,122,135,0.16010154061624648) 84%, rgba(205,209,213,0.48503151260504207) 100%);
     top: 0;
-    @include flex (flex, space-between, center);
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
+    @include flex (flex, space-between, center);    
     padding: 10px;
     a {
         img {
@@ -22,8 +19,7 @@ header {
             li {
                 margin: 10px 15px;
                 a {
-                    text-decoration: map-get($boton, t-decoracion);
-                    //text-decoration: none;
+                    text-decoration: map-get($boton, t-decoracion);                    
                     color: $color-pri;
                     transition: 0.8s;
                     &:hover {

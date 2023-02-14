@@ -15,10 +15,7 @@
         div {
             padding: 30px;
             margin: 20px;
-            @include flex (flex, space-evenly, center);
-            /*display: flex;
-            justify-content: space-evenly;
-            align-items: center;*/
+            @include flex (flex, space-evenly, center);            
             a {
                 img {
                     width: 100px;
@@ -30,18 +27,13 @@
 
     .todo {
         color: $color-pri;
-        @include flex (flex, space-around, center);
-        /*display: flex;
-        justify-content:space-around;
-        align-items: center;*/
+        @include flex (flex, space-around, center);        
         div {                        
             ul{
                 li {
                     a {
                         text-decoration: map-get($boton, t-decoracion);
-                        list-style: map-get($boton, l-stilo);
-                        /*text-decoration: none;
-                        list-style: none;*/
+                        list-style: map-get($boton, l-stilo);                        
                         color: $color-pri;
                     }
                 }

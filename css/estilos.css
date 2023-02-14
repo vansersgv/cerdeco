@@ -50,9 +50,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
   padding: 10px; }
   header a img {
     width: 300px;
@@ -83,19 +80,13 @@ header {
     flex-direction: column;
     display: flex;
     justify-content: column;
-    align-items: center;
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/ }
+    align-items: center; }
     .principal .hero h1 {
       font-size: 70px;
       padding: 20px; }
     .principal .hero p {
       font-size: 35px;
       text-align: center; }
-  .principal .destacados h2 {
-    /*font-size: 50px;
-            padding: 20px;*/ }
   .principal .destacados .grid-destacados {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -111,9 +102,6 @@ header {
   .principal .destacados a {
     flex-direction: column;
     text-decoration: none;
-    /*flex-direction: column;
-                text-decoration: none;
-                font-weight: bolder;*/
     color: black;
     background-color: #cac2c2;
     padding: 10px;
@@ -122,10 +110,7 @@ header {
     font-size: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /*display: flex;
-                justify-content: center;
-                align-items: center;*/ }
+    align-items: center; }
   .principal .destacados .maceta {
     grid-column: span 3; }
   .principal .destacados .florer {
@@ -164,16 +149,11 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      /*display: flex;
-            justify-content: center;
-            text-align: center;*/
       font-size: 20px;
       flex-direction: column;
       align-items: center; }
       .principal .anotate div a {
         text-decoration: none;
-        /*text-decoration: none;
-                font-weight: bolder;*/
         color: black;
         background-color: #cac2c2;
         padding: 10px;
@@ -194,17 +174,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*display: flex;
-        justify-content: center;
-        align-items: center;*/
   padding: 20px;
   margin: 20px; }
 
 .contacto div a {
   text-decoration: none;
   font-weight: bolder;
-  /*text-decoration: none;
-            font-weight: bolder;*/
   color: black;
   background-color: #cac2c2;
   padding: 20px;
@@ -293,10 +268,7 @@ header {
       margin: 20px;
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
-      /*display: flex;
-            justify-content: space-evenly;
-            align-items: center;*/ }
+      align-items: center; }
       .pie .seguinos div a img {
         width: 100px;
         height: 100px; }
@@ -304,15 +276,10 @@ header {
     color: black;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    /*display: flex;
-        justify-content:space-around;
-        align-items: center;*/ }
+    align-items: center; }
     .pie .todo div ul li a {
       text-decoration: none;
       list-style: none;
-      /*text-decoration: none;
-                        list-style: none;*/
       color: black; }
     .pie .todo .contactanos p {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

@@ -11,10 +11,7 @@
         background-size: cover;
         background-attachment: fixed;
         flex-direction: column;
-        @include flex (flex, column, center);
-        /*display: flex;
-    justify-content: center;
-    align-items: center;*/
+        @include flex (flex, column, center);        
         h1 {
             font-size: 70px;
             padding: 20px;
@@ -26,9 +23,7 @@
     }
     .destacados {
         h2 {
-            @extend %titulos;
-            /*font-size: 50px;
-            padding: 20px;*/
+            @extend %titulos;            
         }
         .grid-destacados {
             display: grid;
@@ -49,20 +44,14 @@
         a {
             flex-direction: map-get($boton, f-direccion);
             text-decoration: map-get($boton, t-decoracion);
-            font-weight: map-get($boton, f-weigh);
-            /*flex-direction: column;
-                text-decoration: none;
-                font-weight: bolder;*/
+            font-weight: map-get($boton, f-weigh);            
             color: $color-pri;
             background-color: $color-sec;
             padding: 10px;
             margin: 50px;
             text-align: center;
             font-size: nth($font-size, 5);
-            @include flex (flex, center, center);
-            /*display: flex;
-                justify-content: center;
-                align-items: center;*/
+            @include flex (flex, center, center);            
         }
         .maceta {
             grid-column: span 3;
@@ -79,9 +68,7 @@
     }
     .propio {
         h2 {
-            @extend %titulos;
-            //font-size: 50px;
-            //padding: 20px;
+            @extend %titulos;            
         }
         p {
             font-size: nth($font-size, 4);
@@ -123,18 +110,13 @@
             color: $color-pri;
             width: 100%;
             height: 300px;
-            @include flex (flex, center, center);
-            /*display: flex;
-            justify-content: center;
-            text-align: center;*/
+            @include flex (flex, center, center);            
             font-size: nth($font-size, 7);
             flex-direction: column;
             align-items: center;
             a {
                 text-decoration: map-get($boton, t-decoracion);
-                font-weight: map-get($boton, f-weigh);
-                /*text-decoration: none;
-                font-weight: bolder;*/
+                font-weight: map-get($boton, f-weigh);                
                 color: $color-pri;
                 background-color: $color-sec;
                 padding: 10px;
@@ -158,19 +140,14 @@
         text-align: center;
         font-size: nth($font-size, 7);
         flex-direction: column;
-        @include flex (flex, center, center);
-        /*display: flex;
-        justify-content: center;
-        align-items: center;*/
+        @include flex (flex, center, center);        
         padding: 20px;
         margin: 20px;
     }
     div {
         a {
             text-decoration: map-get($boton, t-decoracion);
-            font-weight: map-get($boton, f-weight);
-            /*text-decoration: none;
-            font-weight: bolder;*/
+            font-weight: map-get($boton, f-weight);            
             color: $color-pri;
             background-color: $color-sec;
             padding: 20px;
@@ -185,9 +162,7 @@
     width: 100%;
     height: 800px;
     h2 {
-        @extend %titulos;
-        //font-size: 50px;
-        //padding: 20px;
+        @extend %titulos;        
     }
     p {
         font-family: unset;
@@ -204,9 +179,7 @@
     width: 100%;
     height: 500px;
     h2 {
-        @extend %titulos;
-        //font-size: 50px;
-        //padding: 20px;
+        @extend %titulos;        
     }
     div {
         p {
@@ -224,9 +197,7 @@
     width: 100%;
     height: 990px;
     h2 {
-        @extend %titulos;
-        //font-size: 50px;
-        //padding: 20px;
+        @extend %titulos;        
     }
     p {
         font-family: unset;
