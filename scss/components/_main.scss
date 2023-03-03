@@ -6,25 +6,28 @@
         color: $color-pri;
         width: 100%;
         height: calc(100vh - 104px);
-        background-image: url(../img/ventana.jpg);
+        background: linear-gradient(rgba(233, 233, 190, 0.445), rgba(255, 255, 255, 0.151)), url(../img/ventana.jpg);
+        //background-image: url(../img/ventana.jpg);
+        @include flex (flex, column, center);        
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
         flex-direction: column;
-        @include flex (flex, column, center);        
+        justify-content: center;
+        align-items: center;
         h1 {
             font-size: 70px;
-            padding: 20px;
+            padding: 20px;                    
         }
         p {
-            font-size: nth($font-size, 4);
+            font-size: nth($font-size, 4);            
             text-align: center;
         }
     }
     .destacados {
         h2 {
-            @extend %titulos;            
-        }
+            @extend %titulos;             
+            }
         .grid-destacados {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -129,7 +132,19 @@
 /*---------- CONTACTO ----------*/
 
 .contacto {
-    h2 {
+        color: $color-pri;
+        width: 100%;
+        height: calc(100vh - 104px);
+        background: linear-gradient(rgba(145, 145, 143, 0.445), rgba(190, 179, 179, 0.151)), url(../img/ventana.jpg);
+        //background-image: url(../img/ventana.jpg);
+        @include flex (flex, column, center);        
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    h1 {
         font-size: nth($font-size, 1);
         padding: 40px;
     }
@@ -150,7 +165,8 @@
             font-weight: map-get($boton, f-weight);            
             color: $color-pri;
             background-color: $color-sec;
-            padding: 20px;
+            border: 1px solid black;            
+            padding: 10px;
             margin: 20px;
         }
     }
@@ -158,27 +174,47 @@
 
 /*------------- ENVIOS ----------*/
 
-.envios {
-    width: 100%;
-    height: 800px;
-    h2 {
-        @extend %titulos;        
-    }
-    p {
-        font-family: unset;
+
+.enviar {
         color: $color-pri;
-        font-size: nth($font-size, 6);
-        padding: 20px;
-        text-align: center;
+        width: 100%;
+        height: calc(100vh - 104px);
+        background: linear-gradient(rgba(145, 145, 143, 0.445), rgba(190, 179, 179, 0.151)), url(../img/ventana.jpg);
+        //background-image: url(../img/ventana.jpg);
+        @include flex (flex, column, center);        
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: nth($font-size, 1);
+            padding: 40px;                   
+        }
+        p {
+            margin: 10px;
+            font-size: nth($font-size, 6);            
+            text-align: center;
+        }
     }
-}
 
 /*---------- NOSOTROS ----------*/
 
-.somos {
-    width: 100%;
-    height: 500px;
-    h2 {
+.somos {    
+    color: $color-pri;
+        width: 100%;
+        height: calc(100vh - 104px);
+        background: linear-gradient(rgba(243, 243, 235, 0.664), rgba(240, 231, 231, 0.685)), url(../img/ventana.jpg);
+        //background-image: url(../img/ventana.jpg);
+        @include flex (flex, column, center);        
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    h1 {
         @extend %titulos;        
     }
     div {
@@ -189,22 +225,8 @@
             text-align: center;
         }
     }
-}
-
-/*---------- PREGUNTAS ----------*/
-
-.preguntas {
-    width: 100%;
-    height: 990px;
-    h2 {
-        @extend %titulos;        
-    }
-    p {
-        font-family: unset;
-        color: $color-pri;
-        font-size: nth($font-size, 6);
-        padding: 20px;
-        text-align: center;
+    h2{  
+        padding: 5px;
     }
 }
 
@@ -212,7 +234,7 @@
 
 .grid-productos {
     width: 100%;
-    h2 {
+    h1 {
         font-size: nth($font-size, 1);
         padding: 30px;
     }

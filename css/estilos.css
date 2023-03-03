@@ -17,6 +17,10 @@
 body {
   font-family: 'Tinos', serif; }
 
+h1 {
+  text-align: center;
+  color: black; }
+
 h2 {
   text-align: center;
   color: black; }
@@ -36,7 +40,7 @@ h4 {
 /*---------- LISTA ----------*/
 /*---------- MAPAS ----------*/
 /*---------- EXTEND ----------*/
-.principal .destacados h2, .principal .propio h2, .envios h2, .somos h2, .preguntas h2 {
+.principal .destacados h2, .principal .propio h2, .somos h1 {
   font-size: 50px;
   padding: 20px; }
 
@@ -50,7 +54,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; }
+  padding: 5px; }
   header a img {
     width: 300px;
     height: 80px; }
@@ -73,13 +77,15 @@ header {
     color: black;
     width: 100%;
     height: calc(100vh - 104px);
-    background-image: url(../img/ventana.jpg);
+    background: linear-gradient(rgba(233, 233, 190, 0.445), rgba(255, 255, 255, 0.151)), url(../img/ventana.jpg);
+    display: flex;
+    justify-content: column;
+    align-items: center;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     flex-direction: column;
-    display: flex;
-    justify-content: column;
+    justify-content: center;
     align-items: center; }
     .principal .hero h1 {
       font-size: 70px;
@@ -160,67 +166,94 @@ header {
         margin: 20px; }
 
 /*---------- CONTACTO ----------*/
-.contacto h2 {
-  font-size: 50px;
-  padding: 40px; }
-
-.contacto div {
+.contacto {
   color: black;
   width: 100%;
-  height: 300px;
-  text-align: center;
-  font-size: 20px;
-  flex-direction: column;
+  height: calc(100vh - 104px);
+  background: linear-gradient(rgba(145, 145, 143, 0.445), rgba(190, 179, 179, 0.151)), url(../img/ventana.jpg);
   display: flex;
-  justify-content: center;
+  justify-content: column;
   align-items: center;
-  padding: 20px;
-  margin: 20px; }
-
-.contacto div a {
-  text-decoration: none;
-  font-weight: bolder;
-  color: black;
-  background-color: #cac2c2;
-  padding: 20px;
-  margin: 20px; }
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contacto h1 {
+    font-size: 50px;
+    padding: 40px; }
+  .contacto div {
+    color: black;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px; }
+  .contacto div a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    background-color: #cac2c2;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px; }
 
 /*------------- ENVIOS ----------*/
-.envios {
+.enviar {
+  color: black;
   width: 100%;
-  height: 800px; }
-  .envios p {
-    font-family: unset;
-    color: black;
+  height: calc(100vh - 104px);
+  background: linear-gradient(rgba(145, 145, 143, 0.445), rgba(190, 179, 179, 0.151)), url(../img/ventana.jpg);
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .enviar h1 {
+    font-size: 50px;
+    padding: 40px; }
+  .enviar p {
+    margin: 10px;
     font-size: 25px;
-    padding: 20px;
     text-align: center; }
 
 /*---------- NOSOTROS ----------*/
 .somos {
+  color: black;
   width: 100%;
-  height: 500px; }
+  height: calc(100vh - 104px);
+  background: linear-gradient(rgba(243, 243, 235, 0.664), rgba(240, 231, 231, 0.685)), url(../img/ventana.jpg);
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .somos div p {
     color: black;
     font-size: 30px;
     padding: 30px;
     text-align: center; }
-
-/*---------- PREGUNTAS ----------*/
-.preguntas {
-  width: 100%;
-  height: 990px; }
-  .preguntas p {
-    font-family: unset;
-    color: black;
-    font-size: 25px;
-    padding: 20px;
-    text-align: center; }
+  .somos h2 {
+    padding: 5px; }
 
 /*---------- PRODUCTOS ----------*/
 .grid-productos {
   width: 100%; }
-  .grid-productos h2 {
+  .grid-productos h1 {
     font-size: 50px;
     padding: 30px; }
   .grid-productos img {
@@ -323,31 +356,31 @@ header {
   .pie .seguinos h2 {
     font-size: 30px; }
   /*---------- PRODUCTOS ----------*/
-  .grid-productos h2 {
+  .grid-productos h1 {
     font-size: 30px; }
   /*----------- NOSOTROS ----------*/
-  .somos h2 {
+  .somos h1 {
     font-size: 30px; }
   .somos div p {
     font-size: 25px; }
   /*---------- ENVIOS ----------*/
-  .envios h2 {
+  .envios h1 {
     font-size: 30px; }
   .envios p {
-    font-size: 25px; }
-  /*---------- PREGUNTAS FRECUENTES ----------*/
-  .PREGUNTAS H2 {
-    font-size: 30px; }
-  .PREGUNTAS P {
     font-size: 25px; } }
 
-@media screen and (max-width: 750px) {
-  /*---------- FOOTER ----------*/
+/*---------- FOOTER ----------*/
+@media screen and (max-width: 800px) {
   .pie .todo {
     flex-direction: column;
     height: 100%;
     background: #888577;
-    background: linear-gradient(346deg, rgba(136, 133, 119, 0.952819) 8%, rgba(122, 122, 135, 0.9052) 54%, rgba(205, 209, 213, 0.485032) 100%); } }
+    background: linear-gradient(346deg, rgba(136, 133, 119, 0.952819) 8%, rgba(122, 122, 135, 0.9052) 54%, rgba(205, 209, 213, 0.485032) 100%); }
+  /*---------- ENVIOS ----------*/
+  .enviar h1 {
+    font-size: 25px; }
+  .enviar p {
+    font-size: 20px; } }
 
 @media screen and (max-width: 650px) {
   /*---------- INDEX-GENERALES ---------*/
@@ -381,26 +414,28 @@ header {
   .pie .todo {
     flex-direction: column; }
   /*---------- PRODUCTOS ----------*/
-  .grid-productos h2 {
+  .grid-productos h1 {
     font-size: 25px; }
   /*---------- NOSOTROS ----------*/
-  .somos h2 {
-    font-size: 25px; }
-  .somos div p {
-    font-size: 20px; }
+  .somos {
+    height: 1100px; }
+    .somos h1 {
+      font-size: 25px; }
+    .somos div p {
+      font-size: 20px; }
   /*---------- ENVIOS ----------*/
-  .envios h2 {
+  .enviar h1 {
     font-size: 25px; }
-  .envios p {
+  .enviar p {
     font-size: 20px; }
   /*---------- CONTACTO ----------*/
-  .contacto h2 {
-    font-size: 25px; }
-  /*---------- PREGUNTAS FRECUENTES ----------*/
-  .preguntas h2 {
-    font-size: 25px; }
-  .preguntas p {
-    font-size: 20px; } }
+  .contacto h1 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 530px) {
+  /*---------- ENVIOS ----------*/
+  .enviar {
+    height: 900px; } }
 
 @media screen and (max-width: 450px) {
   /*---------- INDEX-GENERALES ----------*/
@@ -419,7 +454,8 @@ header {
     .principal .hero .destacados .grid-destacados .grid-item {
       grid-column: span 1;
       grid-row: span 1; }
-  .principal .envios {
+  /*---------- ENVIOS ----------*/
+  .enviar {
     height: 950px; } }
 
 @media screen and (max-width: 420px) {
@@ -428,8 +464,5 @@ header {
     width: 300px;
     height: 300px; }
   /*---------- ENVIOS ----------*/
-  .envios {
-    height: 1110px; }
-  /*---------- PREGUNTAS FRECUENTES ----------*/
-  .preguntas {
-    height: 1100px; } }
+  .enviar {
+    height: 1110px; } }
